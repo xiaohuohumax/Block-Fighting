@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>方块大战</title>
+    <link rel="stylesheet" href="./blockFight.css">
+    <script src="./jquery-3.3.1.js"></script>
+</head>
+
+<body>
+    <canvas class="blockCanvas" id="CBackground">背景</canvas>
+    <div id="blockBody">
+        <canvas class="blockCanvas" id="CBullet">子弹</canvas>
+        <canvas class="blockCanvas" id="CBuff">增益</canvas>
+        <canvas class="blockCanvas" id="CDBuff">减益</canvas>
+        <canvas class="blockCanvas" id="CEmenty">敌人</canvas>
+        <canvas class="blockCanvas" id="CPlayer">玩家</canvas>
+        <canvas class="blockCanvas" id="CInf">信息</canvas>
+        <div id="informetion" class="blockInf"></div>
+        <div id="blockSatrtOrPause" class="blockInf">暂停</div>
+        <div id="blockAgain" class="blockInf">重开</div>
+        <div id="blockEnd" class="blockInf">返回</div>
+        <div id="blockTitle" class="blockInf">方块大战</div>
+        <div id="blockHelp" class="blockInf">
+            <p>游戏说明</p>
+            <ul>
+                <li>
+                    <p>技能冲击波束[按键][J]</p>
+                </li>
+                <li>
+                    <p>技能追踪扫荡[按键][K]</p>
+                </li>
+                <li>
+                    <p>技能保驾护航[按键][L]</p>
+                </li>
+                <li>
+                    <p>打开详细属性[按键][I]</p>
+                </li>
+                <li>
+                    <p>打开属性饼图[按键][O]</p>
+                </li>
+                <li>
+                    <hr>
+                </li>
+                <li>
+                    <p>魂斗罗模式[按键][上上下下左右左右BABA]</p>
+                </li>
+                <li>
+                    <p>退出魂斗罗[按键][EXIT]</p>
+                </li>
+                <li>
+                    <hr>
+                </li>
+                <li>
+                    <p><span>PS</span>:每10关难度升级[出现新方块]</p>
+                </li>
+                <li>
+                    <p><span>PS</span>:每1关难度升级[敌人更加凶残]</p>
+                </li>
+                <li>
+                    <hr>
+                </li>
+                <li>
+                    <p>总共100关[眼花缭乱]</p>
+                </li>
+            </ul>
+        </div>
+        <div id="blockPlay" class="blockInf">开始游戏</div>
+    </div>
+    <script src="./blockFight.js"></script>
+</body>
+
+</html>

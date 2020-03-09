@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-width: 450px;
+    min-width: 600px;
+}
+
+.blockCanvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.blockInf{
+    position: absolute;
+    z-index: 10;
+}
+#CBackground {
+    z-index: -1;
+}
+
+#blockBody {
+    width: 420px;
+    height: 600px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.5);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#blockPlay {
+    bottom: 10%;
+    padding: 10px 0;
+    color: tomato;
+    width: 100%;
+    text-align: center;
+    font-size: 29px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#blockSatrtOrPause, #blockAgain,#blockEnd {
+    display: none;
+    top: 5px;
+    right: 5px;
+    color: tomato;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#blockAgain {
+    top: 25px;
+}
+#blockEnd{
+    top: 45px;
+}
+
+#informetion{
+    font-size: 30px;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    color: tomato;
+}
+
+@keyframes colorChange {
+    0% {
+        color: palevioletred;
+    }
+    20% {
+        color: tomato;
+    }
+    40% {
+        color: turquoise;
+    }
+    60% {
+        color: #345
+    }
+    80% {
+        color: purple;
+    }
+    100% {
+        color: green;
+    }
+}
+
+#blockTitle {
+    top: 10%;
+    padding: 10px 0;
+    color: #345;
+    width: 100%;
+    text-align: center;
+    font-size: 37px;
+    font-weight: 700;
+    animation: colorChange 6s linear infinite alternate;
+}
+
+#blockHelp {
+    top: 30%;
+    padding: 10px 0;
+    color: tomato;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    text-align: center;
+}
+
+#blockHelp p {
+    padding: 0 0 5px;
+}
+
+#blockHelp>p {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+#blockHelp ul {
+    width: 340px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    list-style: none;
+    animation: colorChange 6s linear infinite alternate;
+    animation-delay: 1s;
+}
+
+#blockHelp ul hr {
+    margin: 5px 64px;
+    border-top-width: 1px;
+    border-radius: 0;
+    border-color: palegreen;
+}
+
+#blockHelp ul span {
+    background: palegreen;
+    padding: 0 4px;
+    border-radius: 4px;
+}
+
+#blockPlay:hover, #blockSatrtOrPause:hover, #blockTitle:hover, #blockAgain:hover {
+    color: #345;
+}
